@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            background-image: 
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="https://i.pinimg.com/236x/85/60/ba/8560ba606452e9958337d4746355ba0c.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="https://static.jojowiki.com/images/thumb/0/0c/latest/20201003160619/17_OVATarot_TheStar.png/150px-17_OVATarot_TheStar.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="https://static.jojowiki.com/images/thumb/f/fd/latest/20201003160635/21_OVATarot_TheWorld.png/150px-21_OVATarot_TheWorld.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="https://static.jojowiki.com/images/thumb/7/77/latest/20201003160631/20_OVATarot_Judgement.png/150px-20_OVATarot_Judgement.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="https://static.jojowiki.com/images/thumb/5/57/latest/20201003160628/19_OVATarot_TheSun.png/150px-19_OVATarot_TheSun.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="https://static.jojowiki.com/images/thumb/7/74/latest/20201003160623/18_OVATarot_TheMoon.png/150px-18_OVATarot_TheMoon.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="https://static.jojowiki.com/images/thumb/1/10/latest/20201003160615/16_OVATarot_TheTower.png/150px-16_OVATarot_TheTower.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="https://static.jojowiki.com/images/thumb/e/ea/latest/20201003160612/15_OVATarot_TheDevil.png/150px-15_OVATarot_TheDevil.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="https://static.jojowiki.com/images/thumb/a/a2/latest/20201003160609/14_OVATarot_Temperance.png/150px-14_OVATarot_Temperance.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="https://static.jojowiki.com/images/thumb/d/d0/latest/20201003160604/13_OVATarot_Death.png/150px-13_OVATarot_Death.png" alt=""></div>
+
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                CSS ONLY
+            </h1>
+            <div class="author">
+                <h2>Alexandre Minoru</h2>
+                <p><b>Web Design</b></p>
+                <p>
+                   <a target="null" href="https://github.com/HoanghoDev/youtube_v2/tree/main/slider_3d">inspiration : <p class="luna">Luna Dev</p></a>
+                   
+                </p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
